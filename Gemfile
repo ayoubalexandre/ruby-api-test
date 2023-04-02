@@ -1,0 +1,15 @@
+source 'https://rubygems.org'
+
+
+gem 'allure-cucumber'
+gem 'cucumber'
+gem 'faker'
+gem 'httparty'
+gem 'json'
+gem 'pry'
+gem 'rspec'
+gem 'rubocop'
+gem 'parallel_tests'
+gem 'pry'
+gem 'yaml'
+gem 'cuke_modeler', '~> 3.0'
