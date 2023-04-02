@@ -1,0 +1,11 @@
+default: -p pretty -p ci -p allure
+prod: prod=true -p default
+dev: dev=true -p default
+allure: --format AllureCucumber::CucumberFormatter --out allure-results
+pretty: --format pretty
+ci: --format progress
+
+# Environments ambiente massa de teste
+dev: ENVIRONMENT_TYPE=dev -p default
+hml: ENVIRONMENT_TYPE=hml -p default
+prd: ENVIRONMENT_TYPE=prd -p default

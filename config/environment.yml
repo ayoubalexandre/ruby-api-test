@@ -1,0 +1,3 @@
+environment:
+  vr_api:
+    url: https://portal.vr.com.br/api-web/comum/enumerations
