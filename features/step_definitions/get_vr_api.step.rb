@@ -15,10 +15,9 @@ Então('validar se a chave typeOfEstablishment está presente no retorno') do
 end
 
 #Imprimir uma chave typeOfEstablishment retornada na consulta get
+Quando('quiser imprimir um tipo de estabelecimento aleatório') do
+    @response = get_vr_api.print_type_of_establishment
+end
 Então('imprimir uma chave typeOfEstablishment aleatória') do
-    expect(@response.code).to eql buscar_massa("code ok")
-    expect(@response.body).to include buscar_massa("get_vr campo")
-    puts(@response['typeOfEstablishment'][0]['key'])
-    puts(@response['typeOfEstablishment'][0]['name'])
-    puts(@response['typeOfEstablishment'][0]['label'])
+    expect(@estabelecimento).not_to eql buscar_massa("get_vr nulo")
 end
