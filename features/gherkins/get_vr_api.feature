@@ -26,5 +26,5 @@ Funcionalidade: Obter informações sobre os produtos VR
   @%vr_get_api
   @vr_api_get_imprimir_chave
   Cenário: Imprimir uma chave typeOfEstablishment retornada na consulta get
-    Quando realizar a requisição GET para o endpoint VRPAT
+    Quando quiser imprimir um tipo de estabelecimento aleatório
     Então imprimir uma chave typeOfEstablishment aleatória
